@@ -1,0 +1,69 @@
+2026-04-10 10:00:01 INFO  INIT      System boot sequence started
+2026-04-10 10:00:02 INFO  INIT      Loading configuration
+2026-04-10 10:00:03 INFO  POWER     Voltage=1.10 Current=0.50
+2026-04-10 10:00:04 INFO  SENSOR    Temperature=45 Voltage=1.10
+2026-04-10 10:00:05 INFO  TEST      WaferID=WX001 Step=1 Start
+2026-04-10 10:00:06 INFO  TEST      DieX=10 DieY=5 Status=PASS
+2026-04-10 10:00:07 INFO  TEST      DieX=11 DieY=5 Status=PASS
+2026-04-10 10:00:08 WARNING SENSOR  Temperature high: 85C
+2026-04-10 10:00:09 INFO  SENSOR    Temperature=82 Voltage=1.08
+2026-04-10 10:00:10 ERROR SENSOR    SensorID=23 FailureCode=E102
+2026-04-10 10:00:11 INFO  TEST      DieX=12 DieY=5 Status=FAIL
+2026-04-10 10:00:12 ERROR TEST      DieX=12 DieY=5 FailPattern=OpenCircuit
+2026-04-10 10:00:13 INFO  TEST      DieX=13 DieY=5 Status=PASS
+2026-04-10 10:00:14 WARNING POWER   Voltage unstable: 0.95V
+2026-04-10 10:00:15 INFO  SYSTEM    Recovery procedure started
+2026-04-10 10:00:16 INFO  SENSOR    Temperature=78 Voltage=1.05
+2026-04-10 10:00:17 ERROR SENSOR    SensorID=23 FailureCode=E102
+2026-04-10 10:00:18 INFO  TEST      DieX=14 DieY=5 Status=FAIL
+2026-04-10 10:00:19 ERROR TEST      DieX=14 DieY=5 FailPattern=OpenCircuit
+2026-04-10 10:00:20 INFO  TEST      DieX=15 DieY=5 Status=PASS
+2026-04-10 10:00:21 INFO  TEST      Step=1 Completed
+2026-04-10 10:00:22 INFO  TEST      Step=2 Start
+2026-04-10 10:00:23 INFO  TEST      DieX=10 DieY=6 Status=PASS
+2026-04-10 10:00:24 INFO  TEST      DieX=11 DieY=6 Status=FAIL
+2026-04-10 10:00:25 ERROR TEST      DieX=11 DieY=6 FailPattern=ShortCircuit
+2026-04-10 10:00:26 INFO  SENSOR    Temperature=88 Voltage=1.02
+2026-04-10 10:00:27 WARNING SENSOR  Temperature high: 90C
+2026-04-10 10:00:28 ERROR SENSOR    SensorID=45 FailureCode=E215
+2026-04-10 10:00:29 INFO  TEST      DieX=12 DieY=6 Status=PASS
+2026-04-10 10:00:30 INFO  TEST      DieX=13 DieY=6 Status=FAIL
+2026-04-10 10:00:31 ERROR TEST      DieX=13 DieY=6 FailPattern=Leakage
+2026-04-10 10:00:32 INFO  TEST      DieX=14 DieY=6 Status=PASS
+2026-04-10 10:00:33 INFO  TEST      DieX=15 DieY=6 Status=PASS
+2026-04-10 10:00:34 INFO  POWER     Voltage=1.00 Current=0.60
+2026-04-10 10:00:35 WARNING POWER   Voltage unstable: 0.92V
+2026-04-10 10:00:36 ERROR POWER     ModuleFailure Code=P501
+2026-04-10 10:00:37 INFO  SYSTEM    Power stabilization running
+2026-04-10 10:00:38 INFO  SENSOR    Temperature=70 Voltage=1.03
+2026-04-10 10:00:39 INFO  TEST      Step=2 Completed
+2026-04-10 10:00:40 INFO  TEST      Step=3 Start
+2026-04-10 10:00:41 INFO  TEST      DieX=10 DieY=7 Status=PASS
+2026-04-10 10:00:42 INFO  TEST      DieX=11 DieY=7 Status=FAIL
+2026-04-10 10:00:43 ERROR TEST      DieX=11 DieY=7 FailPattern=OpenCircuit
+2026-04-10 10:00:44 INFO  TEST      DieX=12 DieY=7 Status=FAIL
+2026-04-10 10:00:45 ERROR TEST      DieX=12 DieY=7 FailPattern=OpenCircuit
+2026-04-10 10:00:46 INFO  TEST      DieX=13 DieY=7 Status=FAIL
+2026-04-10 10:00:47 ERROR TEST      DieX=13 DieY=7 FailPattern=OpenCircuit
+2026-04-10 10:00:48 INFO  TEST      DieX=14 DieY=7 Status=PASS
+2026-04-10 10:00:49 INFO  TEST      DieX=15 DieY=7 Status=PASS
+2026-04-10 10:00:50 WARNING SENSOR  Temperature high: 87C
+2026-04-10 10:00:51 ERROR SENSOR    SensorID=23 FailureCode=E102
+2026-04-10 10:00:52 INFO  POWER     Voltage=0.98 Current=0.65
+2026-04-10 10:00:53 WARNING POWER   Voltage unstable: 0.90V
+2026-04-10 10:00:54 ERROR POWER     ModuleFailure Code=P501
+2026-04-10 10:00:55 INFO  SYSTEM    Recovery procedure started
+2026-04-10 10:00:56 INFO  SENSOR    Temperature=75 Voltage=1.01
+2026-04-10 10:00:57 INFO  TEST      Step=3 Completed
+2026-04-10 10:00:58 INFO  TEST      Step=4 Start
+2026-04-10 10:00:59 INFO  TEST      DieX=10 DieY=8 Status=PASS
+2026-04-10 10:01:00 INFO  TEST      DieX=11 DieY=8 Status=PASS
+2026-04-10 10:01:01 INFO  TEST      DieX=12 DieY=8 Status=PASS
+2026-04-10 10:01:02 INFO  TEST      DieX=13 DieY=8 Status=FAIL
+2026-04-10 10:01:03 ERROR TEST      DieX=13 DieY=8 FailPattern=ShortCircuit
+2026-04-10 10:01:04 INFO  TEST      DieX=14 DieY=8 Status=PASS
+2026-04-10 10:01:05 INFO  TEST      DieX=15 DieY=8 Status=FAIL
+2026-04-10 10:01:06 ERROR TEST      DieX=15 DieY=8 FailPattern=Leakage
+2026-04-10 10:01:07 INFO  SENSOR    Temperature=65 Voltage=1.05
+2026-04-10 10:01:08 INFO  TEST      Step=4 Completed
+2026-04-10 10:01:09 INFO  SYSTEM    Test sequence completed
