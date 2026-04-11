@@ -25,6 +25,16 @@ for f in fileContent:
 
 print("Info:", infoCount, "|", "Warning:", warningCount, "|", "Error:", errorCount)
 
+error_messages = []
+for f in fileContent:
+    if "ERROR" in f:
+        parts = f.split("ERROR")
+        message = parts[1].strip()
+        error_messages.append(message)
+
+print("The followuing is the ERROR")
+print(*error_messages, sep="\n")
+
 print("ENDL")
 
 
