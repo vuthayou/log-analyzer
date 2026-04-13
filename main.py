@@ -23,7 +23,7 @@ for f in fileContent:
     else:
         print("File is Wrong")
 
-print("Info:", infoCount, "|", "Warning:", warningCount, "|", "Error:", errorCount)
+
 
 error_messages = []
 for f in fileContent:
@@ -33,7 +33,7 @@ for f in fileContent:
         error_messages.append(message)
 
 print("The followuing is the ERROR")
-#print(*error_messages, sep="\n")
+
 
 errorSummary = {} #list
 for msg in error_messages:
@@ -43,8 +43,11 @@ for msg in error_messages:
     else:
         errorSummary[errType[0]] = 1
  
-
-print(errorSummary)
+print("\n--- Log Summary ---")
+print("Info:", infoCount, "|", "Warning:", warningCount, "|", "Error:", errorCount)
+print("\nTop Errors:")
+for msg, count in errorSummary.items():
+    print(f"{msg}: {count}")
 print("ENDL")
 
 
