@@ -33,8 +33,18 @@ for f in fileContent:
         error_messages.append(message)
 
 print("The followuing is the ERROR")
-print(*error_messages, sep="\n")
+#print(*error_messages, sep="\n")
 
+errorSummary = {} #list
+for msg in error_messages:
+    errType = msg.split(" ", 1) #split the message into 2 parts
+    if errType[0] in errorSummary: #err[0] is the error type we want
+        errorSummary[errType[0]] += 1
+    else:
+        errorSummary[errType[0]] = 1
+ 
+
+print(errorSummary)
 print("ENDL")
 
 
