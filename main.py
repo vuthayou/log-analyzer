@@ -1,3 +1,11 @@
+
+def SearchStatusSubtype(statusName):
+    message = ""
+    if statusName in f:
+        parts = f.split(statusName)
+        message = parts[1].strip()
+    return message
+
 #open file, read only (python default is rt)
 #"with" will close the file automatically
 fileContent = " "
@@ -24,15 +32,21 @@ for f in fileContent:
         print("File is Wrong")
 
 
-
+info_messages = []
 error_messages = []
-for f in fileContent:
-    if "ERROR" in f:
-        parts = f.split("ERROR")
-        message = parts[1].strip()
-        error_messages.append(message)
+warning_messages = []
 
-print("The followuing is the ERROR")
+for f in fileContent:
+    tmp = SearchStatusSubtype("INFO")
+    if tmp != "":
+        info_messages.append(tmp)
+    tmp = SearchStatusSubtype("ERROR")
+    if tmp != "":
+        error_messages.append(tmp)
+    tmp = SearchStatusSubtype("WARNING")
+    if tmp != "":
+        warning_messages.append(tmp)
+print("The following is the ERROR")
 
 
 errorSummary = {} #list
@@ -42,12 +56,13 @@ for msg in error_messages:
         errorSummary[errType[0]] += 1
     else:
         errorSummary[errType[0]] = 1
+
+
  
 print("\n--- Log Summary ---")
 print("Info:", infoCount, "|", "Warning:", warningCount, "|", "Error:", errorCount)
 print("\nTop Errors:")
 for msg, count in errorSummary.items():
     print(f"{msg}: {count}")
-print("ENDL")
 
 
